@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{ data.brand }} - {{ data.model}}</h2>
+<mat-dialog-content class="dialog-content">
+  <img class="dialog-content__img" src="{{data.photo}}" alt="">
+  <article class="dialog-content__article">
+    <h2> Car specification</h2>
+    <p> {{ data.carSpecifications}}</p>
+    <ul>
+      <li> year {{ data.year }}</li>
+      <li> price {{ data.price }}</li>
+    </ul>
+  </article>
+  
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cerrar</button>
+  <button mat-button color="warn" mat-button [mat-dialog-close]="true" cdkFocusInitial>Success</button>
+</mat-dialog-actions>

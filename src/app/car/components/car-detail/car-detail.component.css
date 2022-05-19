@@ -1,0 +1,12 @@
+.dialog-content__img {
+    width: 45%;
+}
+
+.dialog-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dialog-content__article {
+    padding-left: 30px;
+}
